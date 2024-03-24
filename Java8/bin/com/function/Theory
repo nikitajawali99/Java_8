@@ -1,0 +1,12 @@
+Function :-
+
+1)It takes one input and do operations then return the result.
+2)interface Function<T,R>{
+
+R apply(T t, R t);
+
+}
+3)It has apply(), 
+f1.andThen(f2) - f1 will be applied followed by f2
+f1.compose(f2) - f2 will be applied followed by f1
+4)It has identity() methods - Returns a function that always return its input argument

@@ -1,0 +1,11 @@
+1)It is used to call the method directly using :: operator.
+2)Use for calling existing methods.
+3)Code reusability
+4)Existing method logic
+5)Must be same data type argument during method call.
+
+##Four types
+1)Static method ref: class::static method
+2)Constructor: class::new
+3)Instance red: class::instance-method
+4)Reference to instance method from instance: objRef::instanceMethod

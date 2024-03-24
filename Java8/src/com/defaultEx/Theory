@@ -1,0 +1,13 @@
+Default methods :-
+
+1)They are used to add new functionality to the code that will be not necessary to 
+  be overriden.
+2)It is used to write common code among all the classes.
+3)Introduced in java 1.8
+4)It is also called defender/virtual extension class.
+5)We may or not may override default methods.
+6)They are implicity public.
+7)If we overiden parent class default method in child class then 
+  during upcasting it will call child class.
+8)During overiding visibility scope should be same.
+9)We can do interface-class upcasting/object creation.

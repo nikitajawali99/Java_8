@@ -1,0 +1,47 @@
+Predicate :-
+
+1)It takes one input and do operations and then it returns the boolean value.
+2)It has test() method and it is a functional interface.
+3)
+ interface Predicate<T>{
+ 
+ boolean test(T t);
+ 
+ }
+ 4)It also has another methods: 
+ 1)and()  - 1)We can add two predicate results having same input data type and will return true only when both predicate
+              results comes to be true.
+            2)We can combine with negate() 
+            3)If first result or second result is null then it will throw NullPointerException.
+ 2)or() -   1)We can add two predicate results having same input data type and will return true only when any one of the predicate
+              results comes to be true.
+            2)We can combine with negate() 
+            3)If first result or second result is null then it will throw NullPointerException.
+ 3)negate() - 1)It will simply reverse the result
+              2)It result is null then it will throw NullPointerException.
+              
+ 
+ BiPredicate :-
+ 
+ 1)It takes two input and do operations and then it returns the boolean value.
+2)It has test() method and it is a functional interface.
+3)
+ interface BiPredicate<T,U>{
+ 
+ boolean test(T t, U u);
+
+ 
+ }
+4)It also has another methods: 
+ 1)and()  - 1)We can add two predicate results having same input data type and will return true only when both predicate
+              results comes to be true.
+            2)We can combine with negate() 
+            3)If first result or second result is null then it will throw NullPointerException.
+ 2)or() -   1)We can add two predicate results having same input data type and will return true only when any one of the predicate
+              results comes to be true.
+            2)We can combine with negate() 
+            3)If first result or second result is null then it will throw NullPointerException.
+ 3)negate() - 1)It will simply reverse the result
+              2)It result is null then it will throw NullPointerException.
+5)It has static method : isEqual()      
+ 

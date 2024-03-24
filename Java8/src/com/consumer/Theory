@@ -1,0 +1,22 @@
+Consumer :-
+
+1)It accepts input and doesn't return anything
+2)It has accept() method
+3)It has andThen() method to call another consumer 
+4)We can apply multiple andThen() method
+
+interface Consumer<T t>{
+
+void accept(T t){ }
+}
+
+BiConsumer :-
+
+1)It takes 2 input and doesn't return anything.
+2)It has accept() method
+3)It has andThen() method to call another consumer 
+4)We can apply multiple andThen() method
+interface BiConsumer<T , U >{
+
+void accept(T t, U t){ }
+}

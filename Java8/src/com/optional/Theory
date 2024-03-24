@@ -1,0 +1,26 @@
+1)If variable is null or input parameter is null then it will throw 
+  NullPointerException.
+2)To resolve this issue java 8 comes to Optional.class.
+3)If value is present then it will wrap the data if not then it will
+  pass Optional.empty.
+4)It will not help if data is null from db.
+5)Ways to create an Optional object
+  1)Optional.of() - Always excepting a value other than NULL if it is NULL then
+    it will throw NullPointerException.
+  2)Optional.ofNullable() - Allowed a passed parameter to be null will not
+    throw NullPointerException.
+  3)Optional.empty() - It will create an empty object instance.
+  
+Terms :-
+1)empty() - Returns an empty Optional instance.
+2)filter() - If a value is present & matches the given predicate return this Optional,
+             otherwise returns the empty one
+3)isPresent() - If a value is present it will return true or else it will return false.
+4)ifPresent() - If a value is present invokes the specified consumer with the value,
+                or else do nothing.
+5)get() - Returns the value wrappped by this Optional if present or else it will throw
+          NoSuchElementException
+6)orElse() - Returns the value if present or else it will return default value provided.
+7)orElseGet() - Returns the value otherwise return the one provided by supplier.
+8)orElseThrow() - Returns the value if present or else it will throw Exception.
+

@@ -1,0 +1,6 @@
+1)Utility methods.
+2)from jdk 1.8
+3)No overriden for static method
+4)Can call using method-name and class-name.
+5)For calling interface static method we need to call using interface-name.
+6)Use for common business logic.
