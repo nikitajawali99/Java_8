@@ -3,6 +3,7 @@
 3)Code reusability
 4)Existing method logic
 5)Must be same data type argument during method call.
+6)Interface must be functional interface
 
 ##Four types
 1)Static method ref: class::static method
