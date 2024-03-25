@@ -18,7 +18,7 @@ public class Function1 {
 		System.out.println(s3.apply("AnkiiAnu"));
 
 		Function<String, String> s4 = s -> s.trim();
-		System.out.println(s3.apply("AnkiiAnu"));
+		System.out.println(s4.apply(" Ankii An u ").trim());
 
 		System.out.println(s3.andThen(s4).apply("Aniki a iii"));
 		System.out.println(s4.andThen(s3).apply("Aniki a iii"));

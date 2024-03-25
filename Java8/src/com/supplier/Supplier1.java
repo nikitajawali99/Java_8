@@ -28,7 +28,7 @@ public class Supplier1 {
 		Supplier<String> otps = () -> {
 
 			String otp = "";
-			for (int i = 0; i < 3; i++) {
+			for (int i = 1; i < 2; i++) {
 				otp = otp + Math.random();
 			}
 			return otp;
