@@ -25,17 +25,18 @@ public class Consumer1 {
 		Consumer<String> s2 = s1 -> System.out.println(s1.concat("*95"));
 		s2.accept("Niki");
 
-		Consumer<String> s5 = s90 -> s90.substring(0, 4);
-		s5.accept("Niki");
+		Consumer<String> s5 = s90 -> System.out.println(s90.substring(0, 4));
+		s5.accept("Nikita");
 
 		Consumer<List<Integer>> list = l -> Collections.sort(l);
 		List<Integer> list1 = Arrays.asList(12, 11, 9, 47, 45, 90);
 		list.accept(list1);
 		System.out.println(list1);
 
+		System.out.println("************");
 		Consumer<String> s3 = s.andThen(s2).andThen(s5);
 		s3.accept("RKT_College");
-
+		System.out.println("************");
 		Consumer<String> s4 = s2.andThen(s);
 		s4.accept("RKT_College");
 
